@@ -4,13 +4,19 @@ import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   return (
+    // <div 
+    //   className="relative bg-cover bg-center h-screen flex items-center" 
+    //   style={{
+    //     backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+    //     backgroundAttachment: 'fixed'
+    //   }}
+    // >
     <div 
-      className="relative bg-cover bg-center h-screen flex items-center" 
-      style={{
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
-        backgroundAttachment: 'fixed'
-      }}
-    >
+  className="relative bg-cover bg-center h-screen flex items-center bg-scroll md:bg-fixed"
+  style={{
+    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+  }}
+>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
